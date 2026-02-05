@@ -15,7 +15,7 @@ roundNum = 1
 while(True):
     print(f"==========Round # {roundNum}==========")
     print("Snake, Water, Gun : 's', 'w', 'g'")
-    playerChoice = input("Make your move : ")
+    playerChoice = input("Make your move : ").lower()
 
     computerChoice = random.choice(options)
 
@@ -28,8 +28,7 @@ while(True):
     print("======================")
     if(playerChoice == computerChoice):
         print("It's a draw!")
-        playerScore+=1
-        computerScore+=1
+
     elif(playerChoice=="s"):
         if(computerChoice=="w"):
             print(f"{playerName} won this round😋😎")
