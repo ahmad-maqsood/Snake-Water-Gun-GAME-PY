@@ -25,19 +25,19 @@ while(True):
 
     print(f"{playerName} Chose : {playerChoice} || {computerName} Chose : {computerChoice}")
 
+    print("======================")
     if(playerChoice == computerChoice):
         print("It's a draw!")
         playerScore+=1
         computerScore+=1
-
     elif(playerChoice=="s"):
         if(computerChoice=="w"):
             print(f"{playerName} won this round😋😎")
             print(f"{computerName} lost this round😥")
             playerScore+=1
         elif(computerChoice=="g"):
-            print(f"{playerName} lost this round😥")
             print(f"{computerName} won this round😋😎")
+            print(f"{playerName} lost this round😥")
             computerScore+=1
 
     elif(playerChoice=="w"):
@@ -46,24 +46,24 @@ while(True):
             print(f"{computerName} lost this round😥")
             playerScore+=1
         elif(computerChoice=="s"):
-            print(f"{playerName} lost this round😥")
             print(f"{computerName} won this round😋😎")
+            print(f"{playerName} lost this round😥")
             computerScore+=1
 
     elif(playerChoice=="g"):
         if(computerChoice=="s"):
-            print(f"{computerName} lost this round😥")
             print(f"{playerName} won this round😋😎")
+            print(f"{computerName} lost this round😥")
             playerScore+=1
         elif(computerChoice=="w"):
-            print(f"{playerName} lost this round😥")
             print(f"{computerName} won this round😋😎")
+            print(f"{playerName} lost this round😥")
             computerScore+=1
     
 
-    continueGame = input("Another Round?Press Y to continue : ")
+    continueGame = input("Another Round? Press Y to continue : ")
     if(continueGame=="y" or continueGame=="Y"):
-        print("==========Here we go again😈==========")
+        print("==========Oh yeah!😈==========")
         print(f"Score :-")
         print(f"{playerName} : {playerScore} || {computerName} : {computerScore}")
 
